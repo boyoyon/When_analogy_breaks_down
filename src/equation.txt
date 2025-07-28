@@ -1,0 +1,1 @@
+np.sqrt(np.exp(-z) ** 2 + np.exp(z) ** 2 - 2 * np.exp(-z) * np.exp(z) * np.cos(2 * x))/ 2
