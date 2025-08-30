@@ -4,7 +4,7 @@
         <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         <meta charset="utf-8" />
-        <title>類推が破綻するとき</title>
+        <title>10</title>
         <style type="text/css">
             p
             {
@@ -102,24 +102,25 @@
     </style>
     </head>
     <body>
-<h1><center>類推が破綻するとき</center></h1>
-<h2>なにものか？</h2>
+<h2><center>点\((x_0,y_0)\)で偏微分可能で偏導関数が連続なら全微分可能?</center></h2>
+<h3>全微分可能の十分条件</h3>
 <p>
-類推が破綻する例を集めてみる。
-
-<div class="styleBullet">
-<ul>
-<li><a href="01.html">16元数・32元数は存在する ?</a></li>
-<li><a href="02.html">y<sup>2</sup> ≧ 0 ?</a></li>
-<li><a href="03.html">|sin| ≦ 1 ?, |cos| ≦ 1 ?</a></li>
-<li><a href="04.html">大きさ0のベクトル＝ゼロベクトル ?</a></li>
-<li><a href="05.html">平均値の定理はいつでも成り立つ ?</a></li>
-<li><a href="06.html">ルベーグ測度はいつでも存在する ?</a></li>
-<li><a href="07.html">デデキントの完全性公理はいつでも成り立つ?</a></li>
-<li><a href="09.html">複素数 C と R<sup>2</sup> は1:1に対応する ⇒ 複素関数(C→C)と実関数 (R<sup>2</sup>→R<sup>2</sup>) も同じようなもの ?</a></li>
-<li><a href="10.html">1点で偏微分可能, 偏導関数が連続なら全微分可能?</a></li>
-<li><a href="08.html">透明に見えるものは透明?</a></li>
-</ul></div>
+\(f(x,y)\) が \((x_0,y_0)\) <strong><span style="color:red;">の近傍</span></strong>で \(x,y\) に関して偏微分可能で, 偏導関数が \((x_0,y_0)\) で連続ならば, \(f(x,y)\) は \((x_0,y_0)\) で全微分可能
+</p>
+<h3>条件『～の近傍』を外してみる</h3>
 <p>
+\(f(x,y)\) が \((x_0,y_0)\) で \(x,y\) に関して偏微分可能で, 偏導関数が \((x_0,y_0)\) で連続ならば, \(f(x,y)\) は \((x_0,y_0)\) で全微分可能 ?
+</p>
+<p>
+(反例) 座標軸に沿ってV字谷が直交しているような関数<br>
+<br>
+　※ 図は \(y=f(x,z)\) となっているので, 以下では, それに合わせて記述する。<br>
+<br>
+　\(x\)軸上, \(z\) 軸で \(y=0\)。点\((0,0)\)では \(x\) 方向にも, \(z\) 方向にも偏微分可能。<br>
+　偏導関数も \(0\) 固定なので連続。<br>
+　しかし, \(x\) 方向, \(z\) 方向以外の方向では 断面が V字になるため微分できない。
+　
+</p>
+<center><img src="images/v_shaped_valley.gif"></center>
     </body>
 </html>
