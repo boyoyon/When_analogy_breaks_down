@@ -4,7 +4,7 @@
         <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         <meta charset="utf-8" />
-        <title>類推が破綻するとき</title>
+        <title>11</title>
         <style type="text/css">
             p
             {
@@ -102,25 +102,22 @@
     </style>
     </head>
     <body>
-<h1><center>類推が破綻するとき</center></h1>
-<h2>なにものか？</h2>
+<h2><center>CNNは畳み込みを使っているのでシフト不変 ?</center></h3>
 <p>
-類推が破綻する例を集めてみる。
-
-<div class="styleBullet">
-<ul>
-<li><a href="01.html">16元数・32元数は存在する ?</a></li>
-<li><a href="02.html">y<sup>2</sup> ≧ 0 ?</a></li>
-<li><a href="03.html">|sin| ≦ 1 ?, |cos| ≦ 1 ?</a></li>
-<li><a href="04.html">大きさ0のベクトル＝ゼロベクトル ?</a></li>
-<li><a href="05.html">平均値の定理はいつでも成り立つ ?</a></li>
-<li><a href="06.html">ルベーグ測度はいつでも存在する ?</a></li>
-<li><a href="07.html">デデキントの完全性公理はいつでも成り立つ?</a></li>
-<li><a href="09.html">複素数 C と R<sup>2</sup> は1:1に対応する ⇒ 複素関数(C→C)と実関数 (R<sup>2</sup>→R<sup>2</sup>) も同じようなもの ?</a></li>
-<li><a href="10.html">1点で偏微分可能, 偏導関数が連続なら全微分可能?</a></li>
-<li><a href="11.html">CNNは畳み込みを使っているのでシフト不変?</a></li>
-<li><a href="08.html">透明に見えるものは透明?</a></li>
-</ul></div>
+畳み込み層とプーリング層の使用により、畳み込みニューラルネットワークは長い間シフト不変であると考えられてきました。しかし、<strong>最近の研究は、CNN の出力は入力の小さなシフトで大幅に変化する可能性があることを示しました。</strong>これは、ダウンサンプリング (ストライド) 層の存在によって引き起こされる問題です。
+</p>
 <p>
+既存のソリューションは、データ拡張またはアンチエイリアシングのいずれかに依存していますが、どちらにも制限があり、どちらも完全なシフト不変を実現することはできません。
+</p>
+<p>
+我々は適応型多相サンプリング (APS:adaptive polyphase sampling) を提案します。
+</p>
+<p>
+APS により、ネットワークはトレーニング前であってもシフトに対して完全な一貫性を示すため、畳み込みニューラルネットワークを真にシフト不変にする最初のアプローチとなります。
+</p>
+<p style="text-align: right;">
+Truly shift-invariant convolutional neural networks<br>
+(真のシフト不変畳み込みニューラルネットワーク 2020年)
+</p>
     </body>
 </html>
