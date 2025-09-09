@@ -4,7 +4,7 @@
         <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         <meta charset="utf-8" />
-        <title>類推が破綻するとき</title>
+        <title>13</title>
         <style type="text/css">
             p
             {
@@ -102,27 +102,34 @@
     </style>
     </head>
     <body>
-<h1><center>類推が破綻するとき</center></h1>
-<h2>なにものか？</h2>
+<h2><center>距離がゼロの二つの閉集合は必ずしも交わらない</center></h3>
 <p>
-類推が破綻する例を集めてみる。
+閉集合<br>
+⇒ 境界を含む<br>
+⇒ 2つの閉集合の距離がゼロ<br>
+⇒ 境界が両方に含まれるんじゃあ ?
+</p>
 
-<div class="styleBullet">
-<ul>
-<li><a href="01.html">16元数・32元数は存在する ?</a></li>
-<li><a href="02.html">y<sup>2</sup> ≧ 0 ?</a></li>
-<li><a href="03.html">|sin| ≦ 1 ?, |cos| ≦ 1 ?</a></li>
-<li><a href="04.html">大きさ0のベクトル＝ゼロベクトル ?</a></li>
-<li><a href="05.html">平均値の定理はいつでも成り立つ ?</a></li>
-<li><a href="06.html">ルベーグ測度はいつでも存在する ?</a></li>
-<li><a href="07.html">デデキントの完全性公理はいつでも成り立つ?</a></li>
-<li><a href="09.html">複素数 C と R<sup>2</sup> は1:1に対応する ⇒ 複素関数(C→C)と実関数 (R<sup>2</sup>→R<sup>2</sup>) も同じようなもの ?</a></li>
-<li><a href="10.html">1点で偏微分可能, 偏導関数が連続なら全微分可能?</a></li>
-<li><a href="11.html">CNNは畳み込みを使っているのでシフト不変?</a></li>
-<li><a href="12.html">有限個の開球の積集合は開集合。無限個でも同じ?</a></li>
-<li><a href="13.html">距離がゼロの二つの閉集合は必ずしも交わらない。</a></li>
-<li><a href="08.html">透明に見えるものは透明?</a></li>
-</ul></div>
 <p>
+(反例)<br>
+・\(A=\{(x,y) \in \mathbb{R}^2 \mid xy = 1\}\)<br>
+・\(B=\{(x,y)\in \mathbb{R}^2 \mid y=0\}\)<br>
+<br>
+・集合の距離<br>
+　\(d(A,B)=\inf\{d(x,y) \mid x\in A, y\in B\}=0\)<br>
+<br>
+でも<br>
+　\(A\cap B = \varnothing\)<br>
+<br>
+　集合 \(A\) は一方が 0 だと他方がどうがんばっても \(xy=1\) にできないので<br>
+　0 は絶対認められない。<br>
+<br>
+　集合 \(B\) は \(y=0\) が条件
+</p>
+<p>
+(元ネタ)<br>
+<a href="https://old.math.jp/wiki/位相空間論13：距離空間の位相%281%29">https://old.math.jp/wiki/位相空間論13：距離空間の位相%281%29</a><br>
+注意13.3
+</p>
     </body>
 </html>

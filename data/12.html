@@ -4,7 +4,7 @@
         <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         <meta charset="utf-8" />
-        <title>類推が破綻するとき</title>
+        <title>12</title>
         <style type="text/css">
             p
             {
@@ -102,27 +102,41 @@
     </style>
     </head>
     <body>
-<h1><center>類推が破綻するとき</center></h1>
-<h2>なにものか？</h2>
+<h2><center>有限個の開球の積集合は開集合。無限個でも同じ?</center></h3>
 <p>
-類推が破綻する例を集めてみる。
+<strong>開球</strong><br>
+　距離空間 (\(X,d)\) において, 点 \(x \in X\), 半径 \(r\gt 0\) に対して<br>
+　\(B(x,r)=\{y \in X \mid d(x,y)\lt r\}\)<br>
+　を開球という。<br>
+　⇒ 直観的には,『皮をむいたブドウ』の中身。
+</p>
 
-<div class="styleBullet">
-<ul>
-<li><a href="01.html">16元数・32元数は存在する ?</a></li>
-<li><a href="02.html">y<sup>2</sup> ≧ 0 ?</a></li>
-<li><a href="03.html">|sin| ≦ 1 ?, |cos| ≦ 1 ?</a></li>
-<li><a href="04.html">大きさ0のベクトル＝ゼロベクトル ?</a></li>
-<li><a href="05.html">平均値の定理はいつでも成り立つ ?</a></li>
-<li><a href="06.html">ルベーグ測度はいつでも存在する ?</a></li>
-<li><a href="07.html">デデキントの完全性公理はいつでも成り立つ?</a></li>
-<li><a href="09.html">複素数 C と R<sup>2</sup> は1:1に対応する ⇒ 複素関数(C→C)と実関数 (R<sup>2</sup>→R<sup>2</sup>) も同じようなもの ?</a></li>
-<li><a href="10.html">1点で偏微分可能, 偏導関数が連続なら全微分可能?</a></li>
-<li><a href="11.html">CNNは畳み込みを使っているのでシフト不変?</a></li>
-<li><a href="12.html">有限個の開球の積集合は開集合。無限個でも同じ?</a></li>
-<li><a href="13.html">距離がゼロの二つの閉集合は必ずしも交わらない。</a></li>
-<li><a href="08.html">透明に見えるものは透明?</a></li>
-</ul></div>
 <p>
+<strong>開集合</strong><br>
+　任意の点 \(x\in U\) に対して, ある半径 \(r\gt 0\) が存在し<br>
+　\(B(x,r)\subset U\) となるような集合 \(U\subset X\) を開集合という。<br>
+<br>
+　境界上の点では, \(r\) をどう調整しても \(U\) に含まれる点と \(U\) に含まれれない点が混在する。
+</p>
+<center><img src="images/boundary.svg"></center>
+<p>
+　⇒ 直観的には, 開集合は境界点を含まない集合。
+</p>
+
+<p>
+<strong>有限個の開球の積集合</strong><br>
+　位相空間の基本性質により, 開集合の有限個の積集合は開集合になる。<br>
+　⇒ 直観的には『皮をむいたブドウ』の CGモデル をたくさんレンダリングし,<br>
+　　 重なった部分を取り出しても, やっぱり皮はついていないよね. という感じ･･･
+</p>
+<p>
+<strong>しかし, 無限個では成り立たない</strong><br>
+　例：開区間 \(U_n=\left(-\frac{1}{n},\frac{1}{n}\right)\)の無限個の積集合は
+\[
+\bigcap_{n=1}^\infty U_n=\{0\}
+\]
+
+　これは一点集合であり, 開集合ではない。
+</p>
     </body>
 </html>
